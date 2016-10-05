@@ -2,12 +2,20 @@
 <html lang=en>
   <head>
     <title>Gathering Input</title>
+    <script lang="javascript">
+      function getName(){
+        var fullName;
+        fullName = document.getElementById("first").value;
+        document.getElementById("message").innerHTML = fullName;
+      }
+    </script>
   </head>
   <body>
     <form action="demo_form.asp">
       First name: <input type="text" id="first"><br>
       Last name: <input type="text" id="last"><br>
       <input type="button" id="doneButton" value="Done" onclick="getName();">
+      <p id="message"></p>
     </form>
   </body>
 </html>
